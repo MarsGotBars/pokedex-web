@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Pokedex</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+	<div class="overlay">
+		<h1>Display pokemon names in: </h1>
+		<figure>
+			<div onclick="engl()"></div>
+			<div onclick="jap()"></div>
+			<div onclick="chi()"></div>
+		</figure>	
+	</div>
+	<main>
+	<div id="pokeLijstDiv">
+		<select name='pokemon' id='pokelijstDropDown' onchange="showPokemon()"></select>
+	</div>
+	<div id="pokecard"></div>
+	<div id="poInfo"></div>
+	<div id="type"></div>
+	<div id="sprite"></div>
+	<div id= "audio"></div>
+	</main>
+	<section>
+	</section>
+</body>
+<script src="pokemon.js"></script>
+</html>
